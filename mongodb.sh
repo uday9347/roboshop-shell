@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/tmp/$?-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 echo "$LOGFILE"
 
 VALIDATE ()
