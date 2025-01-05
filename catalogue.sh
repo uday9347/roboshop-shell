@@ -36,6 +36,7 @@ id roboshop &>> $LOGFILE
 VALIDATE $? "checking if roboshop user is there"
 
 if [ $? -ne 0 ]
+then
     useradd roboshop 
 else 
     echo "user already exist"
