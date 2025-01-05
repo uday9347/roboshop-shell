@@ -61,7 +61,7 @@ VALIDATE $? "navigating to app dir"
 npm install  &>> $LOGFILE
 VALIDATE $? "installing dependencies"
 
-cp /home/ec2-user/roboshop-shellcatalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
+cp /home/ec2-user/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
 VALIDATE $? "copying the catalogue service to remote server"
 
 systemctl daemon-reload &>> $LOGFILE
