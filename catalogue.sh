@@ -73,7 +73,7 @@ VALIDATE $? "enable cat"
 systemctl start catalogue &>> $LOGFILE
 VALIDATE $? "start cat"
 
-cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
+cp /home/ec2-user/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 VALIDATE $? "cp mongo repi"
 
 dnf install -y mongodb-mongosh &>> $LOGFILE
